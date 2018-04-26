@@ -1,0 +1,130 @@
+.section-video-bg {
+    overflow: hidden;
+    object-fit: fill;
+    z-index: -100;
+}
+
+.section-video {
+    /*position: absolute;*/
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+
+    source {
+        z-index: -100;
+    }
+}
+
+.section-header {
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section-header-text {
+    height: 100%;
+    width: 400px;
+    z-index: 100;
+    position: absolute;
+    align-self: flex-end;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-end;
+
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+
+    padding-bottom: 25px;
+
+    @media (max-width: $width-medium) {
+        font-size: 40px;
+    }
+
+    @media (max-width: $width-small) {
+        font-size: 32px;
+    }
+
+}
+
+#Sennett-Williams {
+    .section-header-text {
+        width: 100%
+    }
+}
+
+#Eugenio-Gutierrez {
+
+    .section-header-text {
+        padding-right: 50%;
+        width: 100%;
+        align-items: center;
+        padding-left: 25px;
+
+        @media (min-width: $width-medium) {
+            padding-right: 55%;
+            width: 100%;
+        }
+
+        @media (min-width: $width-large) {
+            /*width: 40%;
+            padding-left: 50px;*/
+            padding-right: 60%;
+            width: 100%;
+            padding-left: 50px;
+        }
+
+        @media (min-width: $width-xtra-large) {
+            /*width: 37%;
+            padding-left: 120px;*/
+            padding-right: 63%;
+            width: 100%;
+            padding-left: 120px;
+        }
+    }
+}
+
+#Eugenio-Gutierrez.section-header {
+    /*display: block;*/
+    /*justify-content: flex-start;*/
+
+    /*.grey-section-bg {
+        margin-left: -15em;
+    }*/
+}
+
+#Erick-Morales {
+    .section-header-text {
+        width: 40%;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 25%;
+        padding-right: 20px;
+
+        @media (max-width: $width-medium) {
+            width: 50%;
+        }
+
+        @media (max-width: $width-small) {
+            width: 40%;
+        }
+    }
+}
+
+.grey-section-bg {
+    position: absolute;
+    height: calc( 100% - 6px );
+    min-width: 100%;
+    z-index: 1;
+    margin-top: -3px;
+
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3));
+}

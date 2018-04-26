@@ -1,0 +1,73 @@
+{%extends "base.html"%}
+
+{%block title%}
+<title>{{META.share.fbook.card_title}}</title>
+{%endblock%}
+
+{%block header%}
+
+<header class="center">
+
+    <div id="grey-bg"></div>
+
+    <div id='video-bg'>
+        <video loop muted autoplay id='title-video'>
+            <source src="{{ ARCHIE.title_video }}" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="header-text">
+
+        <p class="category">
+            <a href="{{ARCHIE.category_link}}"" target="_blank">{{ARCHIE.category}}</a>
+        </p>
+        <h1>{{ARCHIE.headline}}</h1>
+        <p class="subhead">{{ARCHIE.subhead}}</p>
+        <div class="info">
+            <p>
+                By 
+                <span class="byline">
+                    <a href="http://www.dailycal.org/author/aalyeshmerni/">Alexa Alyeshmerni</a>
+                </span>
+                 and 
+                 <span class="byline">
+                    <a href="http://www.dailycal.org/author/cjohnson/">Cade Johnson</a>
+                </span>
+                 and 
+                 <span class="byline">
+                    <a href="http://www.dailycal.org/author/imacgregor/">Ian MacGregor</a>
+                </span>
+                 and 
+                 <span class="byline">
+                    <a href="http://www.dailycal.org/author/mramaiyer/">Malini Ramaiyer</a>
+                </span>
+                 and 
+                 <span class="byline">
+                    <a href="http://www.dailycal.org/author/mbrown/">Miles Brown</a>
+                </span>
+                 and 
+                 <span class="byline">
+                    <a href="http://www.dailycal.org/author/nkhalid/">Naira Khalid</a>
+                </span>
+                 and 
+                 <span class="byline">
+                    <a href="http://www.dailycal.org/author/lrioja/">Luz Rioja</a>
+                </span>
+                <br />
+                <span class="timestamp"> <time datetime="{{META.timestamp}}">{{ARCHIE.dateline | upper}}</time></span>
+            </p>
+        </div>
+
+    </div>
+</header>
+
+
+{%endblock%}
+
+{%block content%}
+
+{% for section in ARCHIE.sections %}
+    {% include '_sections/' + section.type +'.html' %}
+{% endfor %}
+
+{%endblock%}

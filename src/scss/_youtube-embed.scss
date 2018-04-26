@@ -1,0 +1,19 @@
+.ytplayer {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.ytplayer-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom:56.25%;
+    height: 0;
+}
+
+.ytplayer-container-container {
+    margin: 1.618em auto;
+    max-width: 600px;
+}
