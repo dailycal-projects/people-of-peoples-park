@@ -2,7 +2,7 @@
 
 | Title | people-of-peoples-park |
 |-|-|
-| Developer    | [ianmac2100@gmail.com](ianmac2100@gmail.com) |
+| Developer    | [imacgregor@dailycal.org](imacgregor@dailycal.org) |
 | Link | [http://projects.dailycal.org/2018/people-of-peoples-park/](http://projects.dailycal.org/2018/people-of-peoples-park/) |
 
 
