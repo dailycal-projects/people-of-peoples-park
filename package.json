@@ -7,8 +7,8 @@
     "test": "echo \"No tests\" && exit 1"
   },
   "author": {
-    "name": "ianmac2100@gmail.com",
-    "email": "ianmac2100@gmail.com"
+    "name": "imacgregor@dailycal.org",
+    "email": "imacgregor@dailycal.org"
   },
   "license": "ISC",
   "dependencies": {
