@@ -76,6 +76,10 @@ header {
       font-size: 4em;
       margin-top: 0;
     }
+
+    @media (max-width: $width-xtra-small) {
+      font-size: 3em;
+    }
   }
 
   .subhead {
@@ -144,12 +148,31 @@ header {
   min-width: 100%;
   z-index: -100;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
   #title-video {
     min-width: 100%;
   }
 }
 
-#title-video {
+/*#video-bg-yt {
   height: calc( 90vh - 50px );
+}*/
+/*
+#title-video {
+  min-height: calc( 90vh - 50px );
   object-fit: cover;
+}*/
+
+#title-video-container {
+  min-height: calc( 90vh - 50px );
+  min-width: calc( (90vh - 50px) * 16 / 9 );
+  width: 100%;
+
+  height: calc( 100vw * 9 / 16 );
+
+  overflow: hidden;
 }
