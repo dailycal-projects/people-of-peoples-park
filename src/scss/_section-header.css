@@ -18,7 +18,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -101;
+    z-index: -99;
     /*top: 0;
     left: 0;
     right: 0;
@@ -26,8 +26,8 @@
     background-position: center; 
     background-size: 100% auto;
 
-    @media (max-width: $width-bootstrap-small) {
-        z-index: -99;
+    @media (min-width: $width-medium+1) {
+        display: none;
     }
 }
 
